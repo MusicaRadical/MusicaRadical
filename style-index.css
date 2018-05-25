@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+*{margin:0px;}
+
+body{height: 100%;}
+
+.contenedor{max-width: 1920px; margin: auto;}
+
+/* Configuración del header */
+header{
+    height: 50px;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+.header-izquierda{
+    float:left;
+    padding-top: 10px;
+    padding-bottom:13px;
+    padding-right:13px;
+    padding-left:5%;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    color: white;
+    width: 50%;
+}
+
+.header-derecha{
+    float:right;
+    padding-top: 9px;
+    padding-bottom:14px;
+    padding-right:5%;
+    padding-left:14%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+.ingresar a{
+    text-decoration: none;
+    color: white;
+    background: rgb(0, 182, 82);
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-right:20px;
+    padding-left:20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    max-width: 180px;
+    float: right;
+    transition-duration: 100ms;
+}
+
+.ingresar a:hover{
+    background: #295191;
+    transition-duration: 100ms; }
+.ingresar a:visited{color:white;}
+.ingresar a:link{color:white;}
+
+/* Configuración promocional */
+
+.promocional{
+    height: 100vh; 
+    box-sizing: border-box;
+    background-image: url(imagenes/fondo_guitarra.jpg);
+    background-size: cover;
+}
+
+.promocional-imagen-contenedor{
+    height:40%;
+    padding-top: 10%;
+}
+
+.promocional-imagen{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: rgba(223, 16, 16, 0.3)
+}
+
+.promocional-titulo{
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 2px 2px 10px #000; 
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.promocional-boton-aprender{
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.promocional-boton-aprender a{
+    text-decoration: none;
+    box-sizing: border-box;
+    color:white;
+    background: rgb(0, 177, 74);
+    padding-left:80px;
+    padding-right: 80px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 5px 5px 5px 5px;
+    transition-duration: .5s;
+}
+
+.promocional-boton-aprender a:hover{
+    background: #295191;
+    transition-duration: .5s;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.24);
+}
+
+.promocional-boton-aprender a:link{color:white;}
+.promocional-boton-aprender a:visited{color:white;}
+
+/* Configuración de contenidos principales */ 
+
+.contenidos-principales{
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+.contenidos-principales-1{height: 250px;}
+
+.contenidos-principales-1-izquierda{
+    float:left;
+    width: 40%;
+    background: rgba(104, 230, 31, 0.555);
+    min-height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenidos-principales-1-derecha{
+    float:right;
+    width: 60%;
+    background: rgba(24, 224, 238, 0.589);
+    min-height: 250px;
+    box-sizing: border-box;
+}
+
+.contenidos-principales-2{height: 250px;}
+
+.contenidos-principales-2-izquierda{
+    float:left;
+    width: 60%;
+    background: rgba(241, 27, 62, 0.466);
+    min-height: 250px;
+    box-sizing: border-box;
+}
+
+.contenidos-principales-2-derecha{
+    float:right;
+    width: 40%;
+    background: rgba(241, 198, 6, 0.623);
+    min-height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenidos-principales-1-izquierda-imagen{
+    background: rgba(8, 245, 87, 0.781);
+    height: 200px;
+    width: 200px;
+    margin:  auto;
+    box-sizing: border-box;
+}
+
+.contenidos-principales-2-derecha-imagen{
+    background: rgba(136, 6, 243, 0.801);
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.contenidos-principales-titulos{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.contenidos-principales-textos{
+    font-size: 1em;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Configuración del footer */
+
+footer{
+    width: 100%;
+    background: #193056;
+    box-sizing: border-box;
+}
+
+.footer-contenidos{
+    max-width: 1920px;
+    margin: auto;
+    min-height: 200px;
+    color: white;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.footer-boton-aprender{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-boton-aprender a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background: rgb(0, 153, 64);
+    border-radius: 5px 5px 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 0.5s;
+}
+
+.footer-boton-aprender a:hover{
+    background: #295191;
+    transition-duration: .5s;
+}
+
+.footer-boton-aprender a:link{color: white;}
+.footer-boton-aprender a:visited{color:white;}
+
+.footer-mision{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer-contenidos-general{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.footer-contenidos-general a{
+    color:white;
+    display: block;
+    margin: 5px 0px 5px 0px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.footer-contenidos-general a:hover{
+    text-decoration: underline;
+}
+
+.footer-contenidos-general-acerca-de{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 1%;
+    height: 150px;
+    border-right: rgba(0, 0, 0, 0.116) solid thin;
+}
+
+.footer-contenidos-general-soporte{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 1%;
+    height: 150px;
+    border-right: rgba(0, 0, 0, 0.116) solid thin;
+}
+
+.footer-contenidos-general-aplicaciones{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 1%;
+    height: 150px;
+    border-right: rgba(0, 0, 0, 0.116) solid thin;
+}
+
+.footer-contenidos-general-terminos-y-condiciones{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 1%;
+    height: 150px;
+    border-right: rgba(0, 0, 0, 0.116) solid thin;
+}
+
+.footer-copyright{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-redes-sociales{
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.footer-redes-sociales a{
+    color: white;
+    font-size: 2em;
+    margin: 0px 20px 0px 20px;
+    text-decoration: none;
+}
+
+.footer-redes-sociales a:link{
+    color: white;
+}
+
+.footer-redes-sociales a:visited{
+    color:white;
+}
+
+.footer-redes-sociales a:hover{
+    color: rgba(110, 255, 74, 0.63);
+}
