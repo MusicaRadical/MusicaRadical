@@ -76,15 +76,15 @@ header a:visited{color: white;}
 }
 
 .promocional-imagen-contenedor{
-    height:40%;
+    height:30%;
     padding-top: 7%;
 }
 
 .promocional-imagen{
     width: 200px;
-    height: 200px;
     margin: auto;
     background-image: url(imagenes/imagen-prueba.png);
+    display: none;
 }
 
 .promocional-titulo{
@@ -146,6 +146,7 @@ header a:visited{color: white;}
 /* Configuración de contenidos principales */ 
 
 .contenidos-principales{
+    margin-top: 10px;
     box-sizing: border-box; 
     width: 100%;
 }
@@ -159,29 +160,35 @@ header a:visited{color: white;}
     max-height: 10px;
 }
 
-.contenidos-principales-1{height: 250px;}
+.contenidos-principales-1{height: 500px; margin: 0px 10px 0px 10px;}
 
 .contenidos-principales-1-izquierda{
     float:left;
     width: 40%;
-    min-height: 250px;
+    min-height: 300px;
     padding: 20px;
     box-sizing: border-box;
+    background-color: rgb(223, 223, 223);
+}
+
+.contenidos-principales-1-izquierda img{
+    height: 100%;
+    width: 100%;
 }
 
 .contenidos-principales-1-derecha{
     float:right;
     width: 60%;
-    min-height: 250px;
+    min-height: 500px;
     box-sizing: border-box;
 }
 
-.contenidos-principales-2{height: 250px;}
+.contenidos-principales-2{height: 500px; margin: 0px 10px 0px 10px;}
 
 .contenidos-principales-2-izquierda{
     float:left;
     width: 60%;
-    min-height: 250px;
+    min-height: 400px;
     box-sizing: border-box;
 }
 
@@ -191,22 +198,31 @@ header a:visited{color: white;}
     min-height: 250px;
     padding: 20px;
     box-sizing: border-box;
+    background-color: rgb(220, 220, 220);
 }
 
 .contenidos-principales-1-izquierda-imagen{
-    background: rgba(8, 245, 87, 0.781);
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 100%;
     margin:  auto;
     box-sizing: border-box;
+    background-image: url(imagenes/index-prueba-2.png);
+    background-size: cover;
+    box-shadow: 2px 2px 10px 0px black;
 }
 
 .contenidos-principales-2-derecha-imagen{
-    background: rgba(136, 6, 243, 0.801);
-    height: 200px;
-    width: 200px;
+    height: 500px;
+    width: 100%;
     box-sizing: border-box;
     margin: auto;
+    background-image: url(imagenes/index-prueba-1.png);
+    box-shadow: 2px 2px 10px 0px black;
+}
+
+.contenidos-principales-2-derecha img{
+    height: 100%;
+    width: 100%;
 }
 
 .contenidos-principales-titulos{
@@ -219,7 +235,7 @@ header a:visited{color: white;}
 
 .contenidos-principales-textos{
     font-size: 1em;
-    text-align: justify;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 20px;
     padding: 20px;
@@ -448,4 +464,29 @@ footer{
 .icon-arrow-right-config a:hover{
     background: rgba(255, 255, 255, 0.418);
     transition: 0.5s;
+}
+
+/* Configuración de los @media */
+
+@media screen and (max-width:800px){
+    .contenidos-principales-1-izquierda{display: none;}
+    .contenidos-principales-1-derecha{width: 100%; min-height: 300px;}
+    .contenidos-principales-1{height: 200px;}
+
+    .contenidos-principales-2-derecha{display: none;}
+    .contenidos-principales-2-izquierda{width: 100%; min-height: 300px;}
+
+    .footer-contenidos-general-acerca-de{width: 50%;}
+    .footer-contenidos-general-aplicaciones{width: 50%;}
+    .footer-contenidos-general-soporte{width: 50%;}
+    .footer-contenidos-general-terminos-y-condiciones{width: 50%;}
+}
+
+@media screen and (max-width: 600px){
+    .titulo{font-size: 0.6em;}
+    .header-izquierda{padding-top: 17px;}
+    .ingresar a{font-size: 0.6em;}
+    .header-derecha{padding-top: 13px;}
+    .promocional-titulo{font-size: 1.5em;}
+
 }
