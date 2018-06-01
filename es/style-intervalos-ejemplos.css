@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.panel-derecha-contenido-ejemplo-1{
+    width: 200px;
+    margin: 10px auto 20px auto;
+}
+
+.panel-derecha-contenido-ejemplo-1 img{width: 100%;}
+
+h4{text-align: center; margin-top: 20px;}
+
+.panel-derecha-contenido table, th, td{
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto 20px;
+}
+
+.panel-derecha-contenido table{
+    box-shadow: 2px 2px 10px 0px black;
+}
