@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
 .panel-derecha-contenido-ejemplo-1{
-    width: 200px;
-    margin: 10px auto 20px auto;
+        width: 250px; 
+        padding: 10px; 
+        box-sizing: border-box;
+        background: rgb(240, 240, 240);
+        border-radius: 5px 5px 5px 5px;
+        margin: 10px auto 10px auto;
 }
 
-.panel-derecha-contenido-ejemplo-1 img{width: 100%;}
+.panel-derecha-contenido-ejemplo-1 img{width: 100%; height: 100%;}
 
 h4{text-align: center; margin-top: 20px;}
 
